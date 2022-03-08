@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color:black;
+}
+
+ul {
+    list-style-type: none;   
+    padding: 10px 0;
+
+}
+
+ul li {
+    display: inline;
+    margin: 0 20px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 15px;
+  
+}
+
+
+ul li:nth-child(1) {
+    font-size: 20px;
+}
+
+.nav {
+    width: 100%;
+
+}
+
+.loading {
+    background-color: black;
+    width :100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+
+}
+
+.text p{
+    color:whitesmoke;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 600;
+    animation : abc 1s ease-in-out 1s infinite;
+}
+
+@keyframes abc {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+        color: white;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        color: black;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+        color: white;
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1.1);
+        color: black;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+
+        color: white;;
+    }
+}
+
+.text p:nth-child(1){
+    animation-delay: .25s;
+}
+
+.text p:nth-child(2){
+    animation-delay: .50s;
+    
+}
+
+.text p:nth-child(3){
+   animation-delay: 1.15s;     
+}
+.text p:nth-child(4){
+    animation-delay: 1.40s;
+}
+.text p:nth-child(5){
+    animation-delay: 2.05s ;
+}
+.text p:nth-child(6){
+    animation-delay: 2.30s ;
+}
+.text p:nth-child(7){
+    animation-delay: 2.55s;
+}
+
+.landing{
+    width: 100%;
+    height: 100%;
+    background-image: url('castle.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+hr {
+   margin-top: 25px;
+   color: transparent;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.Welcome{
+    height: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    /* display:flex; */
+    margin-bottom: 50px ;
+    margin-top: 200px;
+}
+
+.clouds {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    padding: 0.5%;
+    bottom : -10%;
+}
+
+.clouds img {
+    animation: goingup 5s ease-in-out 5s infinite;
+}
+
+@keyframes goingup {
+    to {
+        transform: translateY(-100vh);
+    }
+
+}
+
+.clouds img:nth-child(1){
+    animation-delay:0.25s ;
+}
+.clouds img:nth-child(2){
+    animation-delay:0.50 ;
+}
+.clouds img:nth-child(3){
+    animation-delay:1.25s ;
+}
+.clouds img:nth-child(4){
+    animation-delay:1.10s ;
+}
+.clouds img:nth-child(5){
+    animation-delay:1.15s ;
+}
+.clouds img:nth-child(6){
+    animation-delay:1.6 ;
+}
+
+.btn{
+    padding: 15px 25px;
+    border-radius: 15px;
+    background:transparent;
+    border: 1px solid black;
+}
